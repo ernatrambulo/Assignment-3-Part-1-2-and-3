@@ -6,6 +6,7 @@
  */
 public class Employee {
 
+		
 		private int salary;
 		
 		private double kiwisaverPercentage;
@@ -13,7 +14,7 @@ public class Employee {
 		/**
 		 * Default constructor.
 		 */
-		public Employee(int salary, int kiwisaverPercentage) {
+		public Employee(int salary, double kiwisaverPercentage) {
 			this.salary = salary;
 			this.kiwisaverPercentage = kiwisaverPercentage;
 		}

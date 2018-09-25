@@ -5,6 +5,9 @@
  */
 
 public class ComputeImplementation implements ICompute {
+
+	ICompute employee;
+
 	// write formula here describing how to calculate tax
 		public double computeTax(int salary) {
 
@@ -18,8 +21,6 @@ public class ComputeImplementation implements ICompute {
 			return (salary * .33);
 		}
 	}
-		
-
 	/**
 	 * This method returns an employees weekly salary.
 	 */
@@ -39,6 +40,10 @@ public class ComputeImplementation implements ICompute {
 	 */
 	public double computeKiwiSaver(Employee employee) {
 		return employee.getAnnualKiwisaverContribution();
+	}
+	
+	public void setEmployee(ICompute employee) {
+		this.employee = employee;
 	}
 
 }
